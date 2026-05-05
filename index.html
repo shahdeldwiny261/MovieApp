@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">MovieApp</div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Movies</a></li>
+    <li><a href="#">Series</a></li>
+  </ul>
+
+  <input type="text" id="search" placeholder="Search movies..." />
+
+  <div id="user-area"></div>
+  
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="overlay">
+    <h1 id="hero-title"></h1>
+
+    <div class="meta">
+      <span id="hero-rate"></span>
+    </div>
+
+    <p id="hero-desc"></p>
+
+    <button id="details-btn">Watch Details</button>
+  </div>
+</section>
+
+<!--  Sections -->
+<section class="section">
+  <h2> Popular Movies</h2>
+  <div id="popular" class="grid"></div>
+</section>
+
+<section class="section">
+  <h2> Trending Movies</h2>
+  <div id="trending" class="grid"></div>
+</section>
+
+<section class="section">
+  <h2> Top Rated Movies</h2>
+  <div id="toprated" class="grid"></div>
+</section>
+
+<section class="section">
+  <h2> Now Playing</h2>
+  <div id="nowplaying" class="grid"></div>
+</section>
+
+<!--  Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h2 id="m-title"></h2>
+    <p id="m-desc"></p>
+    <p id="m-rate"></p>
+  </div>
+</div>
+
+
+
+<!--  Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!--  Logo + Description -->
+    <div class="footer-col brand">
+      <h3 class="logo-glow">MovieApp</h3>
+      <p>
+        Discover trending movies, top rated films and latest releases using a modern cinematic experience.
+      </p>
+    </div>
+
+    <!--  Links -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Series</a>
+      <a href="#">Trending</a>
+    </div>
+
+    <!--  Categories -->
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#">Popular</a>
+      <a href="#">Top Rated</a>
+      <a href="#">Now Playing</a>
+      <a href="#">Upcoming</a>
+    </div>
+
+    <!--  Newsletter -->
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <p>Get updates about new movies</p>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button>Join</button>
+      </div>
+
+      <!--  Social Icons -->
+      <div class="socials">
+        <a href="#">
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </a>
+
+        <a href="#">
+             <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-square-linkedin fa-lg"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p> &copy; 2026 MovieApp. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
